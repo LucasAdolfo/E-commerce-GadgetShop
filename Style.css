@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;  
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+}
+
+.header {
+    z-index: 1200;
+    position: relative;
+    background: #005b3b;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+.header .logo {
+    font-size: 1.8rem;
+    margin-left: 20px;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+    margin: 0;
+}
+
+.menu li {
+    margin: 0;
+}
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background 0.3s;
+    cursor: pointer;
+    
+}
+
+.menu a:hover {
+    background: #68856f;
+    border-radius: 5px;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.search-bar {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 1rem;
+    width: 200px;
+}
+
+.search-bar:focus {
+    outline: none;
+    border-color: #ffffff00;
+}
+
+.btn-cart {
+    background-color: #ffffff00;;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-cart:hover {
+    background-color: #68856f;
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.banner {
+    background: #f4f4f4;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.banner h2 {
+    margin: 0 0 1rem;
+    font-size: 2.5rem;
+    color: #0057b8;
+}
+
+.btn-login {
+    background-color:#ffffff00; 
+    color: white;
+    text-decoration: none;
+    border: none; 
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.btn-login:hover {
+    background-color: #68856f;
+    transform: scale(1.05);
+}
+
+.btn-login:active {
+    transform: scale(0.95); 
+}
+
+.Produto {
+    width: calc(100% - 40px); 
+    max-width: 400px;
+    height: 430px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding: 15px 25px 15px 25px;
+    text-align: center;
+    margin: 30px;
+    padding-top: 20px;
+}
+
+.img {
+    width: 280px;
+     height: 180px;
+ }
+
+.preco {
+    font-size: 20px;
+    text-align: left;
+    margin: 70px 10px 10px 30px ;
+}
+
+.comprar-btn {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #005b3b;
+    height: 50px;
+    width: 110px;
+    margin: -40px 150px 50px 250px;
+    border-radius: 10px;
+    border: none;
+    transition: background-color .5s;
+}
+
+.comprar-btn a:hover {
+   color: #005b3b;
+} 
+
+.comprar-btn-link {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #005b3b;
+    height: 50px;
+    width: 110px;
+    margin: -40px 150px 50px 250px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: background-color .5s;
+}
+
+.carrosel {
+    display: flex;
+}
+
+footer {
+    background-color: #005b3b;
+    color: white;
+    padding: 5vw;
+    width: 100%;
+    left: 0%;
+    right: 100%;
+    font-size: 2vh;
+}
+
+.nome {
+    background-color: transparent;
+    margin-top: 15px;
+    gap: 10px;  
+}
+
+.h3 {
+    font-size: 40px;
+    padding-top: 50px;
+    margin: -100px 10px 10px 10px;
+}
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1vw;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.detalhes1 {
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.cartões {
+    width: 100%;
+    height: inherit;
+    text-align: center;
+}
+
+.cartões p {
+    margin: 30px 10px 10px 10px;
+}
+
+@media (max-width: 800px) {
+    .menu {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .Produto {
+        width: calc(100% - 30px);
+        margin: 10px;
+    }
+
+    .header .logo {
+        font-size: 1.5rem;
+        text-align: center;
+        width: 100%;
+    }
+
+    .carrosel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .search-bar {
+        width: 100%;
+        max-width: 250px;
+        margin-bottom: 10px;
+    }
+    .footer {
+        width: 100%;
+        height: auto;
+        font-size: 1rem;
+    }
+    .h3 {
+        margin-top: 1px;
+        font-size: 10px;
+        
+    }
+    .servicos {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        text-align: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .actions {
+        flex-direction: column;
+    }
+
+    .Produto {
+        width: 100%;
+    }
+
+     /* Ajustes de alinhamento do rodapé */
+    .footer {
+        flex-direction: column;
+        padding: 15px;
+    }
+    
+    .footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    /* Ajusta as imagens */
+    .prod-img, .img-large {
+        width: 100%;
+        height: auto;
+    }
+    
+}
